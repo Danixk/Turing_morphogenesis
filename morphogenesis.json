@@ -1,0 +1,22 @@
+{
+    "botName" : "turing",
+    "randSeed" : 23,
+    "nBots" :151,
+    "formation": "pile",
+    "timeStep" : 0.0416666,
+    "_simulationTime" : 5000,
+    "showCommsRadius" : 0,
+    "showComms" : 0,
+    "distributePercent" : 0.40,
+    "displayWidth"  : 1200,
+    "displayHeight" : 800,
+    "displayScale"  : 0.75,
+    "showHist" : 0,
+    "storeHistory": 0,
+    "saveVideo" : 0,
+    "saveVideoN" : 200,
+    "commsRadius": 120,
+    "msgSuccessRate": 0.7,
+    "stepsPerFrame" : 1,    
+    "GUI" : 1
+}
