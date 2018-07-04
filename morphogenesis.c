@@ -21,7 +21,7 @@ REGISTER_USERDATA(USERDATA)
 #define DIFF_R 85               // Diffusion range
 #define POLAR_TH 4.0            // Threshold to become polarized
 #define EDGE_TH 0.8             // Ratio between the average number of neighbors of the robot and the average number of neighbors' neighbors for edge detection
-#define WAIT_BEFORE_MOVE 75000  // kilo_ticks to wait before moving. 75000 for simulation, 20000 for real robots (about 10 minutes)
+#define WAIT_BEFORE_MOVE 27000  // kilo_ticks to wait before moving. 75000 for simulation, 27000 for real robots (about 10 minutes)
 #define COUNTER_WAIT 8000       // kilo_ticks to wait when the robot tries to orbit but there is another robot orbiting in the area 
 #define DIST_CRIT 45            // Distance that a robot is considered to be close
 #define R2 120                  // For probabilistic purposes
