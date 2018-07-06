@@ -14,6 +14,8 @@ The following code has been developed specifically for the kilobots [1]. The fil
 
 The code has been adapted to the simulator Kilombo [2]. Please refer to https://github.com/JIC-CSB/kilombo to install the simulator and/or understand the syntax.
 
+The algorithm assumes the kilobots have been calibrated for left and right motion. Calibration for forward motion is not required.
+
 
 ## References
 1. M. Rubenstein, C. Ahler, R. Nagpal, Kilobot: A Low Cost Scalable Robot System for Collective Behaviors, Proceedings of 2012 IEEE International Conference on Robotics and Automation, 3293-3298 (2012).
