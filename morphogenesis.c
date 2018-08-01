@@ -107,7 +107,7 @@ int get_move_type(void){
 /*
  * Returns whether the robot has any neighbor with the specified ID
  */
-uint8_t has_neighbor_with_id(uint8_t id){
+uint8_t has_neighbor_with_id(uint16_t id){
 
 	uint8_t i;
 	uint8_t flag = 0;
@@ -168,10 +168,10 @@ uint8_t get_dist_to_nearest_polarized(){
 /*
  * Returns the id of the nearest neighbor with more than one neighbor
  */
-uint8_t find_nearest_N_id(){
+uint16_t find_nearest_N_id(){
 
 	uint8_t i;
-	uint8_t id = 255;
+	uint16_t id = 0;
 	uint8_t dist = 255;
 
 	for(i = 0; i < mydata->N_Neighbors; i++){
@@ -189,10 +189,10 @@ uint8_t find_nearest_N_id(){
 /*
  * Returns the distance to the furthest polarized neighbor
  */
-uint8_t find_most_distant_N_id(){
+uint16_t find_most_distant_N_id(){
 
 	uint8_t i;
-	uint8_t id = 255;
+	uint16_t id = 0;
 	uint8_t dist = 0;
 
 	for(i = 0; i < mydata->N_Neighbors; i++){
@@ -522,12 +522,10 @@ uint8_t rand_byte(){
 /*
  * A unique, local ID is found for the robot
  */
-uint8_t reset_id(){
+uint16_t reset_id(){
 
-	uint8_t id;
-	id = rand_byte();
-
-	while(has_neighbor_with_id(id)) id = rand_byte();
+	uint16_t id;
+	id = (rand_byte() << 8) | rand_byte();
 
 	return id;
 
@@ -794,7 +792,7 @@ uint8_t orbit_to_wait(){
 
 	uint8_t flag;
 
-	uint8_t id_nearest = find_nearest_N_id();
+	uint16_t id_nearest = find_nearest_N_id();
 	uint8_t dist_nearest = get_dist_by_id(id_nearest);
 
 	if(
@@ -821,7 +819,7 @@ uint8_t wait_to_follow(){
 
 	uint8_t flag;
 
-	uint8_t id_nearest = find_nearest_N_id();
+	uint16_t id_nearest = find_nearest_N_id();
 	uint8_t dist_nearest = get_dist_by_id(id_nearest);
 
 	if(
@@ -846,7 +844,7 @@ uint8_t follow_to_wait(){
 
 	uint8_t flag;
 
-	uint8_t id_nearest = find_nearest_N_id();
+	uint16_t id_nearest = find_nearest_N_id();
 	uint8_t dist_nearest = get_dist_by_id(id_nearest);
 
 
@@ -900,7 +898,7 @@ void edge_flow(){
 				}	
 
                 // The robot orbits around its nearest neighbor
-				uint8_t id = find_nearest_N_id();
+				uint16_t id = find_nearest_N_id();
 				orbit2(get_dist_by_id(id), DIST_CRIT);
 
 			}
@@ -920,7 +918,7 @@ void edge_flow(){
 			else{
 
                 // It rotates in one direction until it starts being further apart from the nearest robot, then switches direction.
-				uint8_t id = find_nearest_N_id();
+				uint16_t id = find_nearest_N_id();
 				move_by_turning(get_diff_dist_by_id(id));
 			}
 
