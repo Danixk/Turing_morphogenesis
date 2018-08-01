@@ -11,8 +11,8 @@ REGISTER_USERDATA(USERDATA)
 #else
 #include <avr/io.h>  // for microcontroller register defs
 
-  #define DEBUG          // for printf to serial port
-  #include "debug.h"
+//#define DEBUG          // for printf to serial port
+//#include "debug.h"
 
 #endif
 
