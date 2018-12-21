@@ -1,8 +1,14 @@
-# Morphogenesis in Robotic Swarms
+# Morphogenesis in robot swarms
 
 Authors: Ivica Slavkov, Daniel Carrillo-Zapata, Noemí Carranza, Xaver Diego, Fredrik Jansson, Jaap A. Kaandorp, Sabine Hauert, James Sharpe.
 
 Contact: James Sharpe: james.sharpe@embl-barcelona.es 
+
+Science Robotics  19 Dec 2018:
+Vol. 3, Issue 25, eaau9178
+DOI: 10.1126/scirobotics.aau9178 
+[Read article](http://robotics.sciencemag.org/content/3/25/eaau9178)
+[Blog post](https://robohub.org/growing-bio-inspired-shapes-with-a-300-robot-swarm/)
 
 This repository contains the code for the algorithm developed as part of the [Swarm Organ Project](http://www.swarm-organ.eu/) and additionally supported by the Spanish Ministry of Economy and Competitiveness and the [EPSRC Centre for Doctoral Training in Future Autonomous and Robotic Systems (FARSCOPE)](http://farscope.bris.ac.uk/). The code is distributed under the MIT license (see the file *LICENSE* for details).
 
