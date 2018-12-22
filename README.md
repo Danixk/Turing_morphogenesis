@@ -29,3 +29,14 @@ The algorithm assumes the kilobots have been calibrated for left and right motio
 ## References
 1. M. Rubenstein, C. Ahler, R. Nagpal, Kilobot: A Low Cost Scalable Robot System for Collective Behaviors, Proceedings of 2012 IEEE International Conference on Robotics and Automation, 3293-3298 (2012).
 1. F. Jansson, M. Hartley, M. Hinsch, I. Slavkov, N. Carranza, T. S. G. Olsson, R. M. Dries, J. H. Grönqvist, A. F. Marée, J. Sharpe, J. A. Kaandorp, V. A. Grieneisen, Kilombo: a Kilobot simulator to enable effective research in swarm robotics, arXiv (2015).
+
+
+## Credits
+
+This application uses Open Source components. You can find the source code of their open source projects along with license information below. We acknowledge and are grateful to these developers for their contributions to open source.
+
+Project: Kilombo [https://github.com/JIC-CSB/kilombo](https://github.com/JIC-CSB/kilombo)
+
+Copyright (c) 2015, University of Amsterdam (Amsterdam, The Netherlands), John Innes Centre (Norwich, United Kingdom), Centre for Genomic Regulation (Barcelona, Spain)
+
+License (MIT) [https://github.com/JIC-CSB/kilombo/blob/master/LICENSE](https://github.com/JIC-CSB/kilombo/blob/master/LICENSE)
